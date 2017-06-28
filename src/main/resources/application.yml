@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: load-balancer
+
+server:
+  port: 8081
+
+microservice:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: sleepy-reef-85729.herokuapp.com, name-demo.herokuapp.com
+    ServerListRefreshInterval: 15000
